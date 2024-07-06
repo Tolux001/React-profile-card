@@ -1,19 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./component/app";
 import "./index.css";
+import Images from "./component/image";
+import Section from "./component/section";
 
-function Main() {
+function App() {
   return (
-    <>
-      <App />
-    </>
+    <div className="mainContainer">
+      <Images />
+      <Section />
+    </div>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Main />
+    <App />
   </React.StrictMode>
 );
